@@ -1,0 +1,40 @@
+
+.black-bg {
+    width : 100%;
+    height : 100%;
+    position : fixed;
+    background : rgba(0,0,0,0.5);
+    z-index : 5;
+    padding: 30px;
+  }
+  .white-bg {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+  } 
+
+
+  /* 애니메이션 법칙 */
+  /* 
+
+  *** 원-웨이 애니메이션 A상태->B상태
+  1. 시작스타일 클래스 만들어두기
+  2. 최종스타일 클래스 만들어두기
+  3. 원할 때 최종스타일로 변하라고 코드짬
+  4. 시작스타일에 transition: all 1s 추가
+   */
+
+  /* 시작스타일 */
+  .black-bg{
+    /* display: none; */
+    /* display: none;과 같음. 차이는 html 제거 / visi는 안 보이게만 */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+  }
+  /* 최종스타일 */
+  .show-modal {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+  }

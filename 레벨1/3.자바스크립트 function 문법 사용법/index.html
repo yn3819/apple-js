@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <!-- 알림창임 / 알림창 닫기 -->
+    <div class="alert-box" id="alert">
+      알림창임
+      <!-- <button onclick="document.getElementById('alert').style.display = 'none';"> 닫기</button> -->
+      <button onclick="알림창닫기()"> 닫기</button>
+    </div>
+
+
+    <!-- 파라미터 문법 -->
+    <!-- 20줄 이렇게 쓰거나 --- 21줄/28줄처럼 쓰거나
+        <button onclick="document.getElementById('alert').style.display = 'block';">버튼1</button> -->
+    <button onclick="알림창열기()">버튼1</button>
+
+    <script>
+      // function 작명(){} :긴 코드 축약하고 싶을 때
+      //   파라미터 문법
+      function 알림창열기() {
+        document.getElementById('alert').style.display = "block";
+      }
+
+      function 알림창닫기() {
+        document.getElementById('alert').style.display = 'none';
+      }
+
+      // 작명()
+    </script>
+  </body>
+</html>

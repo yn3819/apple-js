@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+    <!-- 알림창임 / 알림창 닫기 -->
+    <div class="alert-box" id="alert">
+        알림창임
+        <button onclick="알림창여닫기('none')">닫기</button>
+    </div>
+    <button onclick="알림창여닫기('block')">버튼1</button>
+
+
+<script>
+ //   파라미터 문법
+ function 알림창여닫기(btn) {
+    document.getElementById('alert').style.display = btn;
+  }
+
+// 알림창열기('안녕'); // 22줄 구멍에 안녕이란 글자 넣어서, 23줄 구멍 넣어서 실행해줘
+// 알림창열기('block');
+// 알림창열기('none');
+// 얘네를 15,17줄에 넣기
+
+
+// 파라미터 예시 2
+function 알림창여닫기(구멍, 구멍2) {
+    document.getElementById(구멍2).style.display = 구멍;
+  }
+알림창열기(구멍, 구멍2)
+    
+</script>
+
+
+</body>
+</html>

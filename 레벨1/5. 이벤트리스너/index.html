@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+
+    <!-- 알림창 닫기 -->
+    <div class="alert-box" id="alert">
+
+        <p class="title1" id="title">알림창임</p>
+        <button class="title1" onclick="btn('none')">닫기</button>
+
+    </div>
+
+    <!-- 버튼 동작 방법 -->
+    <!-- 파라미터 문법 -->
+    <button onclick="아이디알림창()">파라미터 아이디</button>
+    <button onclick="비번알림창()">파라미터 비번</button>
+
+
+
+
+    <script>
+        // 알림창 닫기
+        function btn(구멍) {
+            document.getElementById('alert').style.display = 구멍;
+        }
+       
+        function 아이디알림창(){
+            document.getElementsByClassName('title1')[0].innerHTML = '아이디 입력하세요';
+            document.getElementById('alert').style.display='block';
+        }
+        function 비번알림창(){
+            document.getElementById('title').innerHTML = '비번 입력하세요';
+            document.getElementById('alert').style.display='block';
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>
