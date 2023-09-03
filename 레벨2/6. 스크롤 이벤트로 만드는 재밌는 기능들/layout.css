@@ -1,0 +1,28 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar-brand{
+    font-size: 30px;
+    transition: all 1s;
+}
+
+
+/* 부트스트랩 스무스하게 안됨 */
+/* :root{
+    scroll-behavior: auto;
+} */
+
+.lorem{
+    border: 1px solid red;
+    width: 200px;
+    height: 110px;
+    /* 108로 나옴 */
+    overflow-y: scroll;
+}
+.hhh{
+    background: #ccc;
+    height: 2000px;
+    position: relative;
+}
