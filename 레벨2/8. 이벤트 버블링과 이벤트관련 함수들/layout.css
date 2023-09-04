@@ -1,0 +1,30 @@
+.list-group{
+  display: none;
+}
+.show{
+  display: block;
+}
+.black-bg {
+  width : 100%;
+  height : 100%;
+  position : fixed;
+  background : rgba(0,0,0,0.5);
+  z-index : 5;
+  padding: 30px;
+}
+.white-bg {
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+} 
+
+/* 과제 2가지 방법
+방법1 addclass 
+방법2 show(), hide()
+*/
+.black-bg{
+  display: none;
+}
+.show-modal {
+  display: block;
+}
