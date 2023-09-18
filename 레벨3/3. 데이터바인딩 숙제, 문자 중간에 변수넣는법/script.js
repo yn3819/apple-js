@@ -33,4 +33,4 @@ console.log(`문자${a}문자2`)
 for(let i = 0; i < $('.card-body').length; i ++){
   $(".card-body h5").eq(i).html(products[i].title);
   $('.card-body p').eq(i).html('가격은 : ' + products[i].price);
-}
+}  
