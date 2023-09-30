@@ -18,15 +18,15 @@ $(".form-select")
       // for (let i = 0; i < pants.length; i ++){
       //option 태그 생성해주세요(=팬츠개수만큼)
       // }
-      //2. array에 붙일 수 있는 forEach 반복문 ex)배열이 몇개있냐따라 그 개수만큼 반복해줌
+      // 2. array에 붙일 수 있는 forEach 반복문 ex)배열이 몇개있냐따라 그 개수만큼 반복해줌
       // 3. foreach의 콜백함수에 파라미터 넣어주기. (a) 이 데이터는 팬츠의 하나하나의 데이터가 됨.
       pants.forEach(function (a) {
         // console.log(123); // 5번 반복해서나옴
         console.log(a); //
 
         // $(".form-select").eq(1).append('<option>28</option>') //28 출력
-        // $(".form-select").eq(1).append('<option>a</option>') // 배열이 출력됨
-        // $(".form-select").eq(1).append(`<option>${a}</option>`) // 배열이 출력됨(문자 중간에 변수 넣고싶으면 백팁)
+        $(".form-select").eq(1).append('<option>a</option>') // 배열이 출력됨
+        $(".form-select").eq(1).append(`<option>${a}</option>`) // 배열이 출력됨(문자 중간에 변수 넣고싶으면 백팁)
 
         // 4. foreach 안에 파라미터 2개 생성 가능
         // i = 반복문 돌때마다 0부터 1씩 증가하는 정수임
