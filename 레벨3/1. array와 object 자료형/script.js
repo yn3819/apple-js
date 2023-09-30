@@ -22,7 +22,7 @@ console.log(car2.price); // 이렇게 써도 ok
 car2.price = 70000;
 console.log(car2.price); // 이렇게 써도 ok
 
-/* array, object 차이점
+/* 3. array, object 차이점
  array: 순서대로 저장 / object: 이름붙여서 저장 가능
 
  ex) 쇼핑몰: 장바구니 정보 10, 20개... 소나타/5만원/2025년식/흰색/에어컨추가/카드할인정보.....
@@ -31,9 +31,9 @@ console.log(car2.price); // 이렇게 써도 ok
 
   array: 순서 개념 없음. 따라서 자료간 정렬/자르기도 가능
   ex) car.sort();
-
-
 */
+
+// 4. sort, slice
 car.sort(); // sort: 숫자/영어/한글 가나다순
 console.log(car);
 
