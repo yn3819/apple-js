@@ -34,25 +34,27 @@ $("#html-test").html(템플릿2); // =위와 동일
 //   .querySelector(".form-select > option")[1]
 //   .insertAdjacentHTML("beforeend", size);
 
-$(".form-select").eq(0).on("input", function(){
+$(".form-select")
+  .eq(0)
+  .on("input", function () {
     const value = this.value;
-    const init = $(".form-select").eq(1);
+    // const init = $(".form-select").eq(1);
 
     // 먼저 모든 옵션을 제거합니다.
-    init.reset();
-    
+    // init.reset();
+
     if (value == "셔츠") {
       $(".form-select").eq(1).removeClass("form-hide");
-    } 
-    else if (value == '바지'){
+    } else if (value == "바지") {
       $(".form-select").eq(1).removeClass("form-hide");
       // $(".form-select").eq(1).html(''); //1. 싹 비워주세요
 
-      const size = `<option>28</option><option>30</option>`
+      const size = `<option>28</option><option>30</option>`;
       // $(".form-select").eq(1).append(size) //append: 추가해주세요
-      $(".form-select").eq(1).html(size) //2. html: 대체해주세요, 그런데 다시 돌아가면 안바뀜
-
+      $(".form-select").eq(1).html(size); //2. html: 대체해주세요, 그런데 다시 돌아가면 안바뀜
     }
   });
 
-  // 6. 숙제: 바지눌렀다가 셔츠 누르면 이상한데? 고쳐보기
+// 6. 숙제: 바지눌렀다가 셔츠 누르면 이상한데? 고쳐보기
+// 실제로 서버에서 데이터 가져와서 하는 법, 가져올 수 없으니 변수로 대체해서 해보기
+// (6번 강의에 있음)
